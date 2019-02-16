@@ -3,7 +3,14 @@ package chess;
 public class  PlayingPiece {
    private int x;
    private int y;
-   boolean isAlive;
+   private boolean isAlive;
+
+   public PlayingPiece(int x, int y) {
+      this.x = x;
+      this.y = y;
+      this.isAlive = true;
+
+   }
 
    public void move(int newX, int newY) {
 
@@ -14,20 +21,27 @@ public class  PlayingPiece {
 
    private boolean moveLegal(int newX, int newY) {
 
-      if (newX < 8 && newY < 8) {
-         if (newX >= 0 && newY >= 0) {
-            this.x = newX;
-            this.y = newY;
-            return true;
+      while (isAlive = true) {
+
+         if (newX < 8 && newY < 8) ;
+         {
+            if (newX >= 0 && newY >= 0) {
+               this.x = newX;
+               this.y = newY;
+               return true;
+            }
+            return false;
          }
-
       }
-
       return false;
    }
 
-   public int getX () {
-      return x;
+   private void setX(int x) {
+         this.x = x;
    }
 
+   private void setY(int y) {
+      this.y = y;
+   }
 }
+
