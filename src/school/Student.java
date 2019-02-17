@@ -10,4 +10,13 @@ public class Student extends SchoolClass {
         this.studentName = studentName;
         this.studentID = studentID;
     }
+
+   public String getStudentName() {
+      return studentName;
+   }
+
+   public int getStudentID() {
+      return studentID;
+   }
+
 }
