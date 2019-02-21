@@ -17,8 +17,9 @@ public class TestClass {
         System.out.println(teacher.getDisciplines());
         System.out.println(teacher.getName());
 
+
+
     }
+
+
 }
-
-
-
